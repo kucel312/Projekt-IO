@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>790</x>
+      <y>80</y>
+      <w>320</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Klient
+--
+-Imie: String
+-Nazwisko: String
+-PESEL: String
+-Status_werefikacji: Boolaen
+--
+/+zlozRezerwacja(data, stanowskiko): Rezerwacja/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>60</y>
+      <w>150</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstract Class&gt;&gt;
+Uzytkownik
+--
+-id: UUID
+-Email: String
+-Hasło: String
+--
+/+zaloguj(): Boolaen/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>130</y>
+      <w>330</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Instruktor
+--
+-NrLegitymacji: string
+--
+/+weryfikujDokument(klient: Klient, 
+rodzaj: String, pesel: string): Boolean/
+/+wykonajCheckIn(Rezerwacja): SesjaStrzelecka/
+/+wykonajCheckOut(SesjaStrzelecka, wyniki): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>670</x>
+      <y>270</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Rezerwacja
+--
+-data: date
+-status: string
+--
+/+pobierzKliejnt(): void/
+/+zmienStatus(): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>370</y>
+      <w>290</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Placowka
+--
+-nazwa: String
+-adres: String
+--
+/+dodajDoMagazynu(Egzemplarz broni): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>310</y>
+      <w>190</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+SesjaStrzelecka
+--
+-czasRozpoczecia: DateTime
+-czasZakonczenia: DateTime
+--
+/+podliczSesje(): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>430</y>
+      <w>220</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Stanowisko
+--
+-numer: Integer
+-dystansMetry: Integer
+--
+/+sprawdzDostepnosc(): Boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>460</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+SzczegolyZuzycia
+--
+-iloscAmunicji: Integer
+-celnoscProcent: Float
+--
+/+generujLog(): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>880</x>
+      <y>570</y>
+      <w>260</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+EgzemplarzBroni
+--
+-nrSeryjny: String
+-aktualnyPrzebieg: Integer
+--
+/+aktualizujPrzebieg(ilosc: Integer): void/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>620</y>
+      <w>260</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+AmunicjaMagazyn
+--
+-kaliber: String
+-iloscSztuk: Integer
+--
+/+odejmijAmunicje(ilosc: Integer): Boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>160</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>680</x>
+      <y>130</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>260</y>
+      <w>80</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+r1=nadzoruj
+m2=*
+ v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>330</y>
+      <w>330</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1
+&lt; inicjuje</panel_attributes>
+    <additional_attributes>10.0;40.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>730</x>
+      <y>190</y>
+      <w>160</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+r1=składa
+m2=0..*
+ v</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>370</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+r1=dotyczy
+m2=1
+ v</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>420</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1010</x>
+      <y>460</y>
+      <w>60</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>550</y>
+      <w>90</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>70.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>540</y>
+      <w>420</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>400.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>400</y>
+      <w>110</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=1..*</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>0</y>
+      <w>320</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Administrator
+--
+
+--
+/+pobierzListeUzytkownikow(): List&lt;Uzytkownik&gt;/
+/+filtrujTabele(filtr): List&lt;Uzytkownik&gt;/
+/+zatwierdzZamianyKonta(uzytkownik): Boolean/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>90</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
