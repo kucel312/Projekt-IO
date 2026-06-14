@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>72</x>
+      <y>104</y>
+      <w>96</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>PanelKlienta
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>48</x>
+      <y>48</y>
+      <w>352</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>PREZENTACJA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>240</x>
+      <y>112</y>
+      <w>128</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>PanelObsługiWizyt
+--
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>568</x>
+      <y>240</y>
+      <w>192</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>AplikacjaWebowa ASP.NET
+--
+IKlient
+IInstruktor
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>552</x>
+      <y>192</y>
+      <w>264</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>APLIKACJA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>160</y>
+      <w>176</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;200.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>704</x>
+      <y>528</y>
+      <w>232</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>BazaStrzelnicy SQL Server
+--
+IOdczyt
+Izapis
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>680</x>
+      <y>480</y>
+      <w>328</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>DANE</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>712</x>
+      <y>344</y>
+      <w>160</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>192</x>
+      <y>424</y>
+      <w>104</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Klient
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>64</x>
+      <y>424</y>
+      <w>96</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Uzytkownik
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>40</x>
+      <y>392</y>
+      <w>504</w>
+      <h>352</h>
+    </coordinates>
+    <panel_attributes>DOMENA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>64</x>
+      <y>512</y>
+      <w>96</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Rezerwacja
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>360</x>
+      <y>424</y>
+      <w>104</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Instruktor
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>192</x>
+      <y>512</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Stanowisko
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>360</x>
+      <y>520</y>
+      <w>104</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Placowka
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>64</x>
+      <y>600</y>
+      <w>104</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>SesjaStrzelecka
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>200</x>
+      <y>608</y>
+      <w>120</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>SzczegolyZuzycia
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>360</x>
+      <y>608</y>
+      <w>128</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>EgzemplarzBroni
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>208</x>
+      <y>672</y>
+      <w>104</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>AmunicjaMagazyn
+--
+
+halign=left</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>304</x>
+      <y>320</y>
+      <w>264</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>310.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>536</x>
+      <y>568</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;import&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;30.0</additional_attributes>
+  </element>
+</diagram>
